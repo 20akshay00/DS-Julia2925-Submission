@@ -252,6 +252,12 @@ function estimate_total_area_alt(shapes; npoints, xbound = [0, 100], ybound = [0
 	count(point -> any(shape -> point in shape, shapes), points) / npoints
 end
 
+# ╔═╡ 83903cbb-94ca-47bd-a586-669e6ae68e18
+@benchmark estimate_total_area($shapes_t, npoints= $n_points)
+
+# ╔═╡ cbf6e26f-16e7-4d4b-a2d0-3c2d54a95803
+@benchmark estimate_total_area_alt($shapes_t, npoints= $n_points)
+
 # ╔═╡ 2a772d03-5972-4da5-8da8-adf7626db801
 md"## Data generation ⚙️"
 
@@ -350,12 +356,6 @@ let
 	plot!(background_color = "#ec76f0", axis = :nothing)
 	p
 end
-
-# ╔═╡ 83903cbb-94ca-47bd-a586-669e6ae68e18
-@benchmark estimate_total_area($shapes_t, npoints= $n_points)
-
-# ╔═╡ cbf6e26f-16e7-4d4b-a2d0-3c2d54a95803
-@benchmark estimate_total_area_alt($shapes_t, npoints= $n_points)
 
 # ╔═╡ 73503bf0-5dc8-4cc5-a636-e6521ef3089e
 md"""
