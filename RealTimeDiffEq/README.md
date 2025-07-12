@@ -1,5 +1,7 @@
 ## Real-Time Differential Equation Solver: Interactive Pendulum Demo
 
+![Coupled Pendulum](./coupled_pendulum.png)
+
 This project was developed in a few hours during a Doctoral School workshop at UGent to showcase how well-integrated Julia packages can create a real-time, interactive simulation of pendulum physics.
 
 I have dabbled in real-time simulations for a long time, experimenting with similar setups in tools like p5.js ([example](https://editor.p5js.org/20akshay00/sketches/NuIwwXqnR)) and Godot ([educational projects](https://itch.io/queue/c/5223829/educational-projects?game_id=3070889)). While these tools excel in interactivity, they lack the scientific libraries needed for efficient and accurate simulations. Conversely, I had wondered if Julia might suffer from poor interactivity instead, so this project served to see whether this was the case.
